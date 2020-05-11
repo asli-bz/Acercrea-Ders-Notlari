@@ -35,11 +35,28 @@ const tdo = document.querySelectorAll("li.list-group-item");//tüm li etiketleri
 //li lerimizi taşıyan todolist 
 //remove metodu ile elementleri kolaylıkla silebiliriz
 
-//tdo[1].remove();//girdiğimiz id yi nodelistten kolaylıkla silebiliriz
+tdo[1].remove();//girdiğimiz id yi nodelistten kolaylıkla silebiliriz
 
 //remove child
 todo.removeChild(todo.lastElementChild);//silmek isteiğimiz çocuğu bu şekilde parantez içine alıp silebiliriz
 todo.removeChild(tdo[3]);
 //iki şekilde de yapabiliriz
 console.log(tdo);
-console.log(todo);*/
+console.log(todo);
+
+//element-------değiştirme---------
+//replace
+const cardbody = document.querySelectorAll(".card-body")[1];//cardbody elementinin 2. childini seçmiş olduk
+//h5 yerine h3 elementi eklicez bunun için yeni element oluşturcaz
+ 
+const newElement = document.createElement("h3");//yeni elementimizi oluşturduk
+newElement.className = "card-title";//class ekledik
+newElement.id="tasks-title";//elemente id ekledik
+newElement.textContent ="yeni element" ;//elemente textbox verdik
+
+//eski elementi seçicez
+const oldElement = document.querySelector("#tasks-title");//değiştirceğimiz elementi seçiyoruz
+
+cardbody.replaceChild(newElement,oldElement);//replace ile değiştirmek istediğimi elementlerş değiştirebiliriz.önce yeni element , sonra değiştircemiz elementi koyduk
+
+console.log(newElement);//yeni elementimizide ekranda gösterdik*/
