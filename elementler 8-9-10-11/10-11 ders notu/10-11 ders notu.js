@@ -59,4 +59,41 @@ const oldElement = document.querySelector("#tasks-title");//değiştirceğimiz e
 
 cardbody.replaceChild(newElement,oldElement);//replace ile değiştirmek istediğimi elementlerş değiştirebiliriz.önce yeni element , sonra değiştircemiz elementi koyduk
 
-console.log(newElement);//yeni elementimizide ekranda gösterdik*/
+console.log(newElement);//yeni elementimizide ekranda gösterdik
+
+//Dinamik---attribute----değiştirme---silme---ekleme--
+//inputu kullanarak yapabiliriz
+ const ınput = document.getElementById("todo");//elementi idye göre çağırıyoruz
+
+  let element ;//değişken tanımladık
+ element = ınput;//çektiğimiz elementi değişkene atıyoruz
+ element = ınput.classList;//kaç class var bunları list şeklinde görebildik
+ 
+ //formcontrol classının yanına 2tane daha class eklicez
+ //ınput.className="form-control newClass";//1.yol
+ınput.classList.add("newClass");//yeni class eklemek 2.yol
+ınput.classList.add("newClass2");
+
+//form control classını çıkabiliriz
+//ınput.classList.remove("form-control");
+//element = ınput;
+
+//placeholdera nasıl bakabiliriz
+element = ınput ;
+element = ınput.placeholder;//1.yol,
+element = ınput.getAttribute("placeholder");//2.yol bu şekilde placeholder özellğine bakabiliriz
+
+//bu placeholder kısmını değiştirmek istiyorsak
+ınput.setAttribute("placeholder","selaaaamm");//placeholder daki yazıyı bu şekilde değiştirmiş olduk
+element = ınput;//değiştirdiğimiz kısmı görmek istediğimizde
+
+//bu ınputa yeni bir attribute(özellik) ekleyebiliriz
+ınput.setAttribute("title","input");//title özelliği ekledik ve buna ınput değerini verdik
+element = ınput.hasAttribute("name");//bu komutla da bu attribute de bu varmı tarzında kontrol yapabiliriz
+//eğer "" içinde yazıdğımız özellikte var ise true yok ise false çeviricek
+
+//elementimizin özelliğini kaldırmak istersek
+ınput.removeAttribute("name");
+element = ınput;
+
+console.log(element);*/
