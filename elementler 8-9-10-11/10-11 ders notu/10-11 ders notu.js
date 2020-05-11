@@ -27,5 +27,19 @@ newlink.target="_blank";
 newlink.appendChild(document.createTextNode("farklı sayfaya git"));//elementimizi ekledik ancak henüz card body içerisine geçmedi
 cardbody.appendChild(newlink);//oluşturduğumuz elementi cardbodynin son çocuğu olarak ekledik
 
-console.log(newlink);//elementimiz oluştu bunu en son ekranda göstermek için kullandık*/
+console.log(newlink);//elementimiz oluştu bunu en son ekranda göstermek için kullandık
+
 //----dinamik-----element----silme------
+const todo = document.querySelector("ul.list-group");//list elementlerini çağırdık
+const tdo = document.querySelectorAll("li.list-group-item");//tüm li etiketlerini html collectiona atamak için birden fazla çeçiceğimizden dolayı selectorAll kullandık
+//li lerimizi taşıyan todolist 
+//remove metodu ile elementleri kolaylıkla silebiliriz
+
+//tdo[1].remove();//girdiğimiz id yi nodelistten kolaylıkla silebiliriz
+
+//remove child
+todo.removeChild(todo.lastElementChild);//silmek isteiğimiz çocuğu bu şekilde parantez içine alıp silebiliriz
+todo.removeChild(tdo[3]);
+//iki şekilde de yapabiliriz
+console.log(tdo);
+console.log(todo);*/
