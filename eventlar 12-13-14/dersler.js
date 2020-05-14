@@ -2,6 +2,9 @@
 //tasarımımızda butona tıkladığında inputa girdiğimizde jsde belli eventler oluşuyor bizde bu eventleri alıp işlem yapıyoruz
 //event listnerları öğrendikten sonra event obje öğrenicez
 /*
+1.yöntem secici.onclick = functıon(){}
+2.yöntem addeventlistener
+
 //filter alanına erişmek, seçmek için
 const ınput = document.getElementById("filter");//textboxsın ınputunu çağırdık .seçtik
 //console.log(ınput);
@@ -164,6 +167,24 @@ document.addEventListener("DOMcontentLoaded",load);//sayfeadki herşeyn yüklenm
 function load(e){
     console.log("sayfa yüklendi");
 }*/
+/* event--bubling--
+event kabarcıklanması
+A>B>C kutulanma düşüm
+c için bir event tanımlamışsak bu b ve a etiketleri içinde geçerli olur
+içerdeki bir etikete event verdiğimizde bu eventtan dışardaki elementlerde etkilenir
+içten dışa doğru giden event
+her etiketin kendi fonksiyonu var 
+
+----event--captıon--
+A>B>C kutu düşün
+a etiketine yazdığımız olay b ve c içinde gçerli
+event en dıştan içeri doğru da geçerli olur
+dıştan içe doğru giden event
+bunda olay bir fonksiyona bağlı
+kimin çağırdığını bulmak için e.target
+
+
+*/
 
 /*EXPRESSİONS ---- DÜZENLİ-----İFADELER---
 //düzenli ifadeler arama kriterleri oluşturmak 
