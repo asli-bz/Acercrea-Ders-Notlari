@@ -64,5 +64,6 @@ else{
 todos.push(value);
 localStorage.setItem("todos",JSON.stringify(todos));
 
+//JSON.stringfy = arrayi string formatına çevirir(obje görünümünde)
 e.preventDefault();//submit olayı olduğunda kendi sayfamıza gidiyorduk ancak bunu engellemek için preventDefault kullanıyorduk
 }*/
