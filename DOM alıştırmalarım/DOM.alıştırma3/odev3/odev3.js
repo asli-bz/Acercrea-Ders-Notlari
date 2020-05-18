@@ -6,8 +6,9 @@ if(regex.test(mail) == false) //if ile harfler yazılana uymuyorsa yani false is
     {
       alert("hatalı girdiniz");
       return false;//false değer döndürür
+      
     }
-else{
+    else{
       alert("kaydedilmiştir");
       return true;//true değer döndürcek
 
