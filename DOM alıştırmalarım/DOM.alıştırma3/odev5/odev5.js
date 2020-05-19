@@ -10,7 +10,8 @@ metin.addEventListener("keyup",Karakter);
         }         
         else         
         {             
-            document.getElementById("metin").value = document.getElementById("mesaj").value.substring(0,50); 
+            let metin = document.getElementById("metin")
+            metin.value = document.getElementById("mesaj").value.substring(0,50); 
             document.getElementById("deger").innerHTML = 0;         
         } 
     }
