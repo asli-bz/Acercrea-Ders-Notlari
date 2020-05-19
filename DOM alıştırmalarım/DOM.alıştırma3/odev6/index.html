@@ -1,0 +1,47 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" rossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>alışveriş sepeti</title>
+</head>
+<body>
+    <span class="d-inline ml-3 mt-3"><i class="fa fa-shopping-cart"></i> sepetteki ürünler :</span>
+    <input type="text" id="sayi" value="0" readonly />
+   
+    <div class="container mt-3 mb-3" style="width:670px; height: 150px;">
+        <div class="card">
+          <img class="card-img-top"  style="width: 350px; height: 300px;" src="https://m4ky4jtr.rocketcdn.com/Files/Urunler/MainImage/486-Cadiz.jpg?v=1.0" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">fondoten</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button  onclick="fondoten() " class="btn btn-dark">sepete ekle</button>
+
+        </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" style="width: 350px; height: 300px;" src="data:image/jpeg;base64,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" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">ruj</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+           <button  onclick="ruj()" class="btn btn-dark">sepete ekle</button>
+        </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" style = "width: 350px; height: 300px;" src="https://www.gratis.com/ccstore/v1/images/?source=/file/v2469011349499968897/products/10033058_01.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">pudra</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <button  onclick="pudra()" class="btn btn-dark">sepete ekle</button>
+        </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="odev6.js"></script>
+</body>
+</html>
