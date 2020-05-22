@@ -1,66 +1,121 @@
-<!DOCTYPE html> 
-<html lang="en">   
-<head>
-	<meta charset="utf-8">     
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
 
-	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 	
-    <title></title>
-</head> 
-<body> 	
-    
-	<div class="container py-5">  
-		
-		<div class="card mb-5 " style="max-width: 400px;"> 
-				<div class="col-md-8">       
-					<div class="card-body">
-				   <p class="card-text h5 text-center">Plase fill with your details</p>        
-						<table>         
-						<tr>           
-						  <td>               
-						  	<div class="form-row">     
-						  		<div class="col">       
-                                      <input style="width:175px" type="text" class="form-control" id="ad" placeholder="First Name">     
-								  </div> 
-						  	</div>           
-						 </td>
-						 <td>               
-						  	<div class="form-row">     
-						  	    <div class="col"> 
-						  			 <input style="width:175px" type="text" class="form-control" id="soyad" placeholder="Last Name">    
-								  </div> 
-						  	</div>           
-						 </td>       
-                        </tr>  
-                        <tr>           
-						    <td>               
-						  	<div class="form-row">     
-						  	    <div class="col"> 
-						  			 <input style="width:175px" type="text" class="form-control" id="age" placeholder="Age">    
-								  </div>  
-						  	</div>          
-						    </td> 
-						    <td>               
-						  	<div class="form-row">     
-						  	    <div class="col"> 
-						  			 <input style="width:175px" onclick="move()" type="text" class="form-control" id="dogum" placeholder="Date year">    
-								  </div>          
-						  	</div>  
-						    </td>       
-						</tr>  
-				</table>
-				<button   id="previous" class="mt-3 buton" type="button"  > previous</button>
-              	<button   id="next" class="mt-3 buton" type="button" > Next</button>
-				<button   id="son" class="mt-3 buton" type="button" > save</button>
-			   
-			</div>     
-		</div>   
-    </div> 
-</div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>     
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>     
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
-<script src="odev1.js"> </script>
-</body> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title></title>
+</head>
+
+<body>
+	<div id="ekran1" class="container py-5">
+		<div class="card mb-5 " style="max-width: 400px;">
+			<div class="col-md-8">
+				<div class="card-body">
+					<p class="card-text h5 text-center">Plase fill with your details</p>
+					<table>
+						<tr>
+							<td>
+								<div class="form-row">
+									<div class="col">
+										<input style="width:175px" type="text" class="form-control" id="ad"
+											placeholder="First Name">
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="form-row">
+									<div class="col">
+										<input style="width:175px" type="text" class="form-control" id="soyad"
+											placeholder="Last Name">
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="form-row">
+									<div class="col">
+										<input style="width:175px" type="text" class="form-control" id="age"
+											placeholder="Age">
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="form-row">
+									<div class="col">
+										<input style="width:175px" type="text" class="form-control" id="dogum"
+											placeholder="Date year">
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<button id="next" class="mt-3 buton" type="submit"> Next</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ekran2" class="container py-5">
+		<div class="card mb-5 " style="max-width: 400px;">
+			<div class="col-md-8">
+				<div class="card-body">
+					<p class="card-text h5 text-center">Plase fill with your details</p>
+					<table>
+						<tr>
+							<td>
+								<div class="form-row">
+									<div class="col">
+										<input style="width:175px" type="text" class="form-control" id="mail"
+											placeholder="Mail">
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="form-row">
+									<div class="col">
+										<input style="width:175px" type="text" class="form-control" id="sifre"
+											placeholder="Password">
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="form-row">
+									<div class="col">
+										<input style="width:175px" type="text" class="form-control" id="sifretekrar"
+											placeholder="Again Password">
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<button id="previos" class="mt-3 buton" type="button"> Previos</button>
+					<button id="save" class="mt-3 buton" type="button"> Next</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="margin-left:300px;"><span class="text-center bg-dark"id="ilk" class="ml-5 mr-5">1</span><span class="text-center bg-light" id="son">2</span></div>
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="odev1.js"> </script>
+</body>
 </html>
