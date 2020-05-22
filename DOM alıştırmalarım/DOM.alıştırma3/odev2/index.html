@@ -1,36 +1,33 @@
-<!DOCTYPE html>
-<html>
-<style>
-#myProgress {
-  width: 100%;
-  background-color: #ddd;
-}
 
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: #4CAF50;
-}
-</style>
-<body>
-
-<h6>seçenek1</h6>
-
-<div id="myProgress">
-  <div id="myBar"></div>
-</div>
-<br>
-<button onclick="move()">Click Me</button> 
-
-<h6>seçenek2</h6>
-
-<div id="myProgress">
-  <div id="myBar"></div>
-</div>
-<br>
-<button onclick="move2()">Click Me</button> 
-
-
-<script src="odev2.js"></script>
+<!DOCTYPE html> <html lang="en"> <head>     
+  <meta charset="UTF-8">     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">     
+  <title>oylama</title> 
+</head> 
+  <body>     
+    <div id="div1" class="container">       
+      <span>1. En sevdiğin yemek</span>       
+      <div>         
+        <p id="metin">Pide  :  <button  type="button" onclick="oyla()" class="btn btn-danger" id="buton1" >oy ver</button></p>
+      </div>       
+      <div>   
+        <p> Mantı  :  <button type="button" onclick="oyla()" class="btn btn-danger" id="buton2">oy ver</button></p>
+      </div>
+    </div>
+    <div id="div2"  class="container mt-3">
+        <div class="progress" id="oy">         
+          <div class="progress-bar bg-warning" id="tur" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">         
+          <div class="progress-bar bg-warning " id="tur2" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div> 
+    </div> 
+  </div>
+      
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+<script src="odev2.js"></script> 
 </body>
 </html>

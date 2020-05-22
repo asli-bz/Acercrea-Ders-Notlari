@@ -1,33 +1,23 @@
-var i = 0;
-function move() {
-  if (i == 0) {
-    i = 0;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
+let sec1 = document.getElementById("div1");
+let sec2 = document.getElementById("div2");
 
-    function frame(){
-      if (width >= 10) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
+let btn1=document.getElementById("buton1");
+let btn2=document.getElementById("buton2");
+
+let tur1=document.getElementById("tur");
+let tur2=document.getElementById("tur2");
+let a=document.getElementById("metin");
+let b=document.getElementById("oy");
+sec2.style.display="none";
+
+function oyla(){
+tur1.style.width="60%";
+tur1.textContent="%60";
+tur2.style.width="40%";
+tur2.textContent="%40";
+a.appendChild(b);
+btn1.style.display="none";
+btn2.style.display="none";
+
+sec2.style.display="block";
 }
-/*function move2() {
-    var elem = document.getElementById("myBar");   
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 10) {
-        clearInterval(id);
-      } else {
-        width++; 
-        elem.style.width = width + '%'; 
-        document.getElementById("label").innerHTML = width * 1  + '%';
-      }
-    }
-}*/
