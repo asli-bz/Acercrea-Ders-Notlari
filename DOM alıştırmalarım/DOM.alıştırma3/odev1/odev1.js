@@ -58,4 +58,4 @@ function addItem(){
             }
       }
     } 
-}
+}//bu yöntem amatör yapımı bunun yerine 

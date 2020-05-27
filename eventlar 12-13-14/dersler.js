@@ -18,7 +18,7 @@ const ınput = document.getElementById("filter");//textboxsın ınputunu çağı
 
 /*2.yöntem
 //ilk olarak hngi event oluşucak onu yazıyoruz 
-//bu event oluştupunda burda bir colbacck fonksiyon çalışıcak,bu event oluştuğunda fonksiyon çalıştırmak istiyorsak
+//bu event oluştupunda burda bir colback fonksiyon çalışıcak,bu event oluştuğunda fonksiyon çalıştırmak istiyorsak
 //jsde bu eventı dqaha ayrıntılı öğrenmek için bize event parametresi göndermekte
 ınput.addEventListener("focus",function(eventobject){ //event listener yapısını oluşturduk
 //bu şekilde elementlerimize event atıyoruz
@@ -45,7 +45,7 @@ e.preventDefault();//bunu kullandığımızda sayfamızın yenilenmesini önkemi
 
 /*--------KeyBoard------Eventleri-----*/
 //documant üzerinde event oluşturucaz.document üzerinde herhangi bi yere tıklandığında eventlerı çğrenmek içn
-
+//tıklama eventlları
 /*keypress == klavyede herhangi bir harflere veya sayılara bastığımızda çalışan event
 document.addEventListener("keypress",run);//event oluşturduk ve buna run fonksiyonunu atadık
  
@@ -62,7 +62,7 @@ console.log(event.which);//ile klavyeden hangi tuşa bastığımımzı görebili
   console.log(e.key);
  }*/
 
-/*keyup == Bir tuşu bıraktığımız an bu event oluşuyor
+/*keyup == Bir tuşu bıraktığımız an bu event oluşuyor 
 document.addEventListener("keyup",event);
 function event(e){
  console.log(e.key);
