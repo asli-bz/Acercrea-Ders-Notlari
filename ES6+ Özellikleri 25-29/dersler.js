@@ -26,4 +26,5 @@ console.log(cube(4));
 //arrow func ile
 const cube = x => x * x * x;//tek işlem yapıp ve bu tek işlem return ise gerek yok
 console.log(cube(4));
- */
+ -----------------------------------------------------------------------------------------------*/
+ 
