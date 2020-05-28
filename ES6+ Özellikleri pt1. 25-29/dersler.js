@@ -84,3 +84,93 @@ const {name:isim,year:yil,salary:maas,showInfos:bilgilerigöster} = person;//obj
 console.log(isim,yil,maas);
 bilgilerigöster();
 */ 
+/*------------------------------------------------------------------------------------------------------------------------------
+
+//spread operatör : aslında işlemlerimiz kısaltmak için kullandığımız bir adet operatör
+const langs = ["python","java","c++"];
+
+//console.log(langs[0],langs[1],langs[2]);//yanayana bir boşluk ile yazdırmak istersek
+//bunu bu şekilde de yapabilirz
+console.log(...langs);
+
+//eski yöntemde
+const langs2 = ["javascript","c#",langs[0],langs[1],langs[2]];
+
+//spread operatör kullanırsak 
+const langs2 = ["javascript","c#",...langs];
+console.log(langs2);
+
+//2.örnek olarak
+const number =[1,2,3,4,5,6,7,8,9];//array oluşturdk
+const [a,b] = number;//destructing ile arraydeki ilk iki değeri a ve b ye atamş olduk
+//1 ve 2yi aldıktan sonra geri kalanı arraya atmak için
+const [a,b,...number2] = number;
+console.log(a,b);
+console.log(number2);
+
+//spread yönteminin en güzel kullanım kısmı ise
+const addnumber = (a,b,c) => console.log(a+b+c);
+const numbers =  [100,200,300];
+//fonksiyonu kullanıp a b cyerine numberstaki sayıları kullanmak istioruz eski yöntemde numbers[0] tarzında yapılıyordu
+addnumber(...numbers);//şeklinde spread operatörunu kullanırsak zaten değerleri tek tek göndermiş olucak
+*/
+/*-------------------------------------------------------------------------------------------------------------------------------
+
+//FOR In ve FOR Of döngüleri
+
+const obje={
+    name:"mustafa",
+    age:25,
+    salary:3000
+};//obje tanımladık
+const langs =["python","c++","php"];//array tanımladık
+const name = "mustafa";//string tanımladık
+
+//for İn dongüsü
+
+//obje de gezinme 
+for(let prop in obje){//prop adında değişkenimiz var
+console.log(prop);//her bir döndüğünde her özelliğe sahip oldu
+//ancak değerimizi almadı bunu yapmak içinde 
+console.log(prop,obje[prop]);//şeklinde string kısımlarını aldık
+}//bu bizim gezinme işlemimiz
+
+//Arraylerde gezinme
+for (let indexarr in langs){
+    console.log(indexarr);
+    //o indexe eş değeri almak için
+    console.log(indexarr.langs[indexarr]);
+}//for in ile arrayın indexleri üzerinde gezinebildik
+
+//String te gezinme : arraylerle aynı mantık olucak
+const name = "mustafa";//string tanımladık
+for (let index in name ){
+    //console.log(index);//stringin idnexlerini verdi peki bu indexlere karşılık gelen kısmı istersek
+    console.log(index.name[index]);
+}
+//For Of dongusu : coğu zaman for in yerine kullanılabilir ancak obje üzerinde gezinemşyoruz.array a benzeyen veri tipleri üzeinde gezinilebilir.nodelist gibi 
+const obje={
+    name:"mustafa",
+    age:25,
+    salary:3000
+};//obje tanımladık
+const langs =["python","c++","php"];//array tanımladık
+const name = "mustafa";//string tanımladık
+
+//obje de hata aldığını göstermek için ;
+for(let value of obje){
+console.log(value);
+}//yaptığımızda bize typeerror verir For Of ile bu obje ğzerinde gezinemeyiz
+ 
+//arrayde bu sefer index üzerinden değil değerler üzerinden gezinebilirz
+for (let value of langs){
+    console.log(value);
+}
+//string üzerinde gezinebiliriz
+for (let karakter of name){
+    console.log(karakter);
+}
+//bu for of u maps ile gelen diğer konularda da kullanabilicez
+
+//console.log(index.name[index]);!!!!!!!!!!!!!!! bu işlemde hata alıyor
+*/
