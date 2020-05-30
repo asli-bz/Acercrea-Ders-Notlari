@@ -66,8 +66,7 @@ const array =[["key1","value1"],["key2","value2"]];//array içinde array oluştu
 const lastmap = new Map(array);
 console.log(lastmap);//arraylerden map oluşturma yapmış olduk
 
-
-// =>MAPden ARRAY oluşturma
+// => MAPden ARRAY oluşturma
 const cities = new Map();
 cities.set("ankara",5);
 cities.set("istanbul",25);
@@ -76,8 +75,6 @@ cities.set("izmir",32);
 const array = Array.from(cities);//citiestekileri arraya göndermiş olduk
 console.log(array);//array oluştu 
 //["ankara",5],["istanbul",25],["izmir",32];arraye attığımızda bu şekilde göstermiş olduk aslında
- 
 
 //mapleri projelere göre istediğimiz yerde kullanabiliriz
-
 */
