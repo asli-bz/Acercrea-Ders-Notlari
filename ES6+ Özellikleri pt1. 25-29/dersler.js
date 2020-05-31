@@ -28,7 +28,6 @@ console.log(cube(4));
 const cube = x => x * x * x;//tek işlem yapıp ve bu tek işlem return ise gerek yok
 console.log(cube(4));
  -----------------------------------------------------------------------------------------------*/
-
  /*DESTRUCTİNG =  Destructuring assignment yine kod yazmayı çok pratikleştiren bir özelliktir. 
 //Hem dizilerle hem objelerle kullanılabiliyor. Dizi ve objeyi toplu bir şekilde değişkenlere atmamızı sağlıyor.
 //bu bizim eski yöntemimiz bunu destructing ile kısaca yapabiliriz
@@ -85,7 +84,6 @@ console.log(isim,yil,maas);
 bilgilerigöster();
 */ 
 /*------------------------------------------------------------------------------------------------------------------------------
-
 //spread operatör : aslında işlemlerimiz kısaltmak için kullandığımız bir adet operatör
 const langs = ["python","java","c++"];
 
@@ -115,9 +113,7 @@ const numbers =  [100,200,300];
 addnumber(...numbers);//şeklinde spread operatörunu kullanırsak zaten değerleri tek tek göndermiş olucak
 */
 /*-------------------------------------------------------------------------------------------------------------------------------
-
 //FOR In ve FOR Of döngüleri
-
 const obje={
     name:"mustafa",
     age:25,

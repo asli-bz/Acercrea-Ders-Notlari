@@ -1,4 +1,4 @@
-/*ES6+ MAPS VERİ TİPİ : her key(anahtar) -value(değer) mapler de bu key bir veritpi oluyor
+/*ES6+ MAPS VERİ TİPİ : her key(anahtar) -value(değer) mapler de bu key bir veritpi oluyor c# collectionslara benzetilebilir
 obje oluştururken bu objemiz int yada string olmaıyor burada KEY kendi içerisinde int string obje olabiliyor
 
 //MAP OLUŞTURMA
