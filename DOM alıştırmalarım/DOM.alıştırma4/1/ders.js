@@ -3,7 +3,7 @@ const sor = (soru, evet, hayir) => {
     if (confirm(soru)) evet();
     else hayir();
   }
-  console.log(sor("iyimisn",1,2));
+  console.log(sor("iyimisn","evet","hayır"));
 */
 
 /* örnek2 ) 
@@ -14,8 +14,9 @@ console.log(topla(7,6));
 */
 
 /*ornek3)
-const konus = konus(name,text) => {
-  var konusan="konusan";
-  return konusan+'' + name+': '+text;
-})("Ahmet","Merhaba");
+c) const konus = (function konus(name,text){
+    var konusan=’konusan’;
+    return konusan+'' + name+': '+text;
+})(“Ahmet”, “Merhaba”);
+
 */

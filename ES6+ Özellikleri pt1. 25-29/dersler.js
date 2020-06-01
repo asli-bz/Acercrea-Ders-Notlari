@@ -109,7 +109,7 @@ console.log(number2);
 //spread yönteminin en güzel kullanım kısmı ise
 const addnumber = (a,b,c) => console.log(a+b+c);
 const numbers =  [100,200,300];
-//fonksiyonu kullanıp a b cyerine numberstaki sayıları kullanmak istioruz eski yöntemde numbers[0] tarzında yapılıyordu
+//fonksiyonu kullanıp a b c yerine numberstaki sayıları kullanmak istioruz eski yöntemde numbers[0] tarzında yapılıyordu
 addnumber(...numbers);//şeklinde spread operatörunu kullanırsak zaten değerleri tek tek göndermiş olucak
 */
 /*-------------------------------------------------------------------------------------------------------------------------------
