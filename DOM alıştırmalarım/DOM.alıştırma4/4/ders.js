@@ -6,6 +6,5 @@ let veri = {
     meyve: ["elma", "armut"],
     varmi: true
   };
-  
-const{meyve} = veri;//obje içindeki 2.değere ulaşmalı
-console.log(...meyve);//spread ile 
+const{meyve:deger} = veri;
+console.log(deger);
