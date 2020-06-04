@@ -51,8 +51,8 @@ emp2.showInfos();
 //yapıcı fonksiyon içine bu objelere özellik ve method ekleyebiliyoruz 
 //bir adet objeden yeni objeler falan oluşturabiliyoruz
 */
-
-/*PROTOTYPE
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*PROTOTYPE 1
 protottyype javascriptin  diğer dillerden farkı var ! diğer diller class tabanlı dil iken javacsript prototype tabanlı bir dildir.classlar bulunmamaktadır. class şeklinde yazılım olsa da arka tarfta prototype gönderilir
 her bir obje de kendi içerisinde bri obje oluyor.
 
@@ -75,4 +75,27 @@ const emp1 = new Employee("mustsfa",25);
 console.log(emp1);
 console.log( emp1.toString());//object prtotype içerindeki tostringten geldi bu olaya prototype chain denir(prototpye zinciri)
 //zincirleme şekilde objelerimizi oluşturuyoruz.bu şekilde en temel prototype yazılan metodları miras olarak almış oluyoruz.aslında objeler arası kalıtım yapmış oluyoruz
+*/
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*PROTOTYPE 2
+prototype ların bir diğer özelliği ise
+ 
+function Employee(name,age){
+    this.name = name;
+    this.age= age;
+    }
+// kalıtımın sağlanacağı prototype a ulaşmak için 
+Employee.prototype.showInfos = function(){//hepsinde kullanılcak olan metodu ortak prototype a yazmış oluyoruz
+        console.log("isim :"+ this.name +"yas:"+this.age);
+       
+}//metodları prtotype a da yazarsak tğm objeler sahip olucaktır o fonksiyonun sadece 1 kopyası olucak .
+emp2.showInfos();
+
+    const emp1 = new Employee("mustafa",25);// 2 obje oluşturmaaya çalıştık
+    const emp2 = new Employee("oğuz",23);
+    console.log(emp1);//yaptığımızda objemizi görebiliyoruz bu obje içerisinde birtane prototype bulunuyor bunun içindeki metodları kullanabiliyorduk
+    console.log(emp2);
+//burada showInfosu yazmak dezavantaj oldu mu ?
+//eğer constracterda yazarsak bellekte 2 obje olduğu ilçin aynı fonksiyondan 2 kopya var . ilerleyen kısımlarda 100 tane oluşturursak bu kısımda birbirinin kopyası olduğu için belleği boşuna doldurmuş olucak
+//metodlarımızı bir prototype a bağlı olduğu için bellekte tek birtane yer kaplıcak. belleği gereksiz yere kullanmamış oluruz
 */
