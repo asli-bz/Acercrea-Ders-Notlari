@@ -62,7 +62,6 @@ addNumber.call(obj1,100,200);//ilk argüman olarak birtane obje olması gerekmek
 addNumber.call(obj2,100,200);//bu sefer de functiondaki this kısmı window objesi değilde bizim göndermiş olduğumuz objede oluyor
 //call fonksiyonu ile fonksiyonumuzu istediğimiz obje ile çağırabiliyoruz
 
-
 //apply : call ile birebir aynı işlem fakat yapısı farklı
 const obj1={
     number1:10,
@@ -83,7 +82,7 @@ addNumber.apply(obj2,[100,200]);//başka constacter çağırmak içinde bunları
 function getnumbertotal(number3,number4){
     return this.number1+this.number2+number3+number4; 
     //bind fonksiyon bize bir fonksiyon kopyası olarak veriyo genelde eventte kullanılıyor
-}//this anahtar kelimesi karıştığında kullanılır
+}//this anahtar kelimesi karıştırıldığında kullanılır
 //apply ve call bize faxladan bi fonksiyon üretmezken , bind bize kopya bir fonksiyon üretiyor 
 
 const copyfunc1 = getnumbertotal.bind(obj1);//obj1 e göre bir adet getnumbertotal fonksiyonundan kopya fonksiyon oluşmakta
