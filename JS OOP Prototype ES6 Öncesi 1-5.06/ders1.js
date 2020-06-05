@@ -3,9 +3,9 @@
 //server kısmını kullanmak için sadece DOM bilmek gerekmiyor . bunun iççin de constracter ve objeyi öğrenmemiz lazım
 //burada obje oluşturabiliyor , bu objelerle başka obje tanımlıyabiliyoruz
 //NESNE YÖNELİMLİ PROGRAMLAMA
- console.log(window);//window objesinin bir çok özelliği bulunuyor
+console.log(window);//window objesinin bir çok özelliği bulunuyor
 console.log(this);//bu this şuan da üzerinde bulunduğumuz objeyi gösteren anahtar kelime GLOBAL scope da en temel obje window obje olduğu için çalıştığında window objesi geliyor
-//kendi objemizi luşturuken 
+//kendi objemizi oluşturuken 
 
 const emp1={//bu yapı js de object literal
     name : "mustsfa",
@@ -21,10 +21,10 @@ emp1.ShowInfos();
 console.log(emp1);
 
 //constructer
-function Employee(){//bir adet yapıcı fonksiyon
+function Employee(){//bir adet yapıcı fonksiyon büyük harf ile 
     this.name = "mustafa";
 }
-const emp1 = new Employee();//kendi oluşturduğumuz objeden new anahtar kelime ile tekrar obje oluşturmuş oluyoruz
+const emp1 = new Employee();//kendi oluşturduğumuz objeden new anahtar kelimesi ile tekrar obje oluşturmuş oluyoruz
 const emp2 = new Employee();
 console.log(emp1);
 console.log(emp2);

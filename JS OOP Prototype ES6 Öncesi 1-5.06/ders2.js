@@ -41,3 +41,61 @@ const emp = new Employee("mustafa",24);
 console.log(emp);
 emp.test1();
  */
+//----------------------------------------------------------------------------------------------------------------------------------------------
+ /*CALL APPLY BİND FONKSİYONLARI
+ call ve apply fonksiyon görevleri aynı olsa da kullanımlarında ufak farklar olabilir
+
+//call
+const obj1={
+    number1:10,
+    number2:20
+};
+const obj2={
+    number1:30,
+    number2 : 40
+};//iki adet obje tanımladık
+
+function addNumber(number3,number4){
+    console.log(this.number1 + this.number2 + number3 + number4);
+}
+addNumber.call(obj1,100,200);//ilk argüman olarak birtane obje olması gerekmekte ve burada obj1 e göre 
+addNumber.call(obj2,100,200);//bu sefer de functiondaki this kısmı window objesi değilde bizim göndermiş olduğumuz objede oluyor
+//call fonksiyonu ile fonksiyonumuzu istediğimiz obje ile çağırabiliyoruz
+
+
+//apply : call ile birebir aynı işlem fakat yapısı farklı
+const obj1={
+    number1:10,
+    number2:20
+};
+const obj2={
+    number1:30,
+    number2 : 40
+};//iki adet obje tanımladık
+
+function addNumber(number3,number4){
+    console.log(this.number1 + this.number2 + number3 + number4);
+}
+addNumber.apply(obj1,[100,200]);//yine ilk argüman olarak obje vermemiz gerek fakat argüman listesi olarak array şeklinde vermeemiz gerekmekte
+addNumber.apply(obj2,[100,200]);//başka constacter çağırmak içinde bunları kullanabiliriz
+
+//bind : bir fonksiyonu objeye bağlayabiliyoruz.farklı farklı objeleri bağlamaya çalışıyoru
+function getnumbertotal(number3,number4){
+    return this.number1+this.number2+number3+number4; 
+    //bind fonksiyon bize bir fonksiyon kopyası olarak veriyo genelde eventte kullanılıyor
+}//this anahtar kelimesi karıştığında kullanılır
+//apply ve call bize faxladan bi fonksiyon üretmezken , bind bize kopya bir fonksiyon üretiyor 
+
+const copyfunc1 = getnumbertotal.bind(obj1);//obj1 e göre bir adet getnumbertotal fonksiyonundan kopya fonksiyon oluşmakta
+ 
+const copyfunc2 = getnumbertotal.bind(obj2);
+
+console.dir(copyfunc1);//daha detaylı şekilde görmek için dir kullanılır
+
+console.dir(copyfunc2);
+
+//kopya olduğu için istediğimiz yerde kullanabilir 
+ console.log(copyfunc1(100,200));
+ console.log(copyfunc2(100,200));
+ 
+*/
