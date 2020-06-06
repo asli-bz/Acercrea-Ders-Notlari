@@ -52,7 +52,7 @@ const obj1={
 };
 const obj2={
     number1:30,
-    number2 : 40
+    number2:40
 };//iki adet obje tanımladık
 
 function addNumber(number3,number4){

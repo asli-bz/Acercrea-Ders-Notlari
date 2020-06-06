@@ -85,7 +85,7 @@ function Employee(name,age){
     this.age= age;
     }
 // kalıtımın sağlanacağı prototype a ulaşmak için 
-Employee.prototype.showInfos = function(){//hepsinde kullanılcak olan metodu ortak prototype a yazmış oluyoruz
+Employee.prototype.showInfos = function(){//oluşturduğumuz objelerde  kullanılcak olan metodu ortak prototype a yazmış oluyoruz
         console.log("isim :"+ this.name +"yas:"+this.age);
        
 }//metodları prtotype a da yazarsak tğm objeler sahip olucaktır o fonksiyonun sadece 1 kopyası olucak .
