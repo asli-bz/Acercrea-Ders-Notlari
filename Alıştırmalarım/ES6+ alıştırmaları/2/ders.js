@@ -12,3 +12,4 @@ person.set("yas","15");
 
 const arrow = () => console.log(person.entries().next().value);
 arrow();
+//DÜZELTİLİCEK

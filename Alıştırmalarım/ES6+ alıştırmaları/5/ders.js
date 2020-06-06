@@ -24,5 +24,5 @@ let maaslar = {
     let array = Object.entries(isimler);
     
     for (let i of array) {
-        console.log(i);
+        console.log(i);//destracteri for of yada for in içersinde kullanının
     }
