@@ -7,7 +7,9 @@ html.set("id","Js");
 html.set("price",10);
 html.set("id","NodeJs");
 html.set("price",10);
-console.log(html);
+
+const html_obje=new Map(html);
+console.log(html_obje);
 
 const htmlset = new Set();
 htmlset.add({id:"html",price:3});

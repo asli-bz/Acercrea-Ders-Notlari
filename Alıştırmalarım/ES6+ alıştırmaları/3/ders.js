@@ -16,10 +16,10 @@ let options = {
   
   /*c)Bu objenin içerisinden aynı anda title’ı bir değişkene, width ve height’i ayrı bir objeye spread ile aktarınız. 
   */
- const {title,width,height} = options;
- const ornek={title,...options}
- console.log(ornek);
-//DÜZELTİLİCEK
+const {title:yeni,...opt}=options;
+
+console.log(yeni);
+console.log(opt);
 
 
 
