@@ -12,14 +12,17 @@ let maaslar = {
     else{
         console.log("Maaş ayşe");
     }
-    // const {ali:a,ayse:b,ahmet:c} = maaslar;
-    // console.log(a,b,c);
+    //  const {ali:a,ayse:b,ahmet:c} = maaslar;
+    //  console.log(a,b,c);
     //for in kullanırsak
     // for (let i in maaslar) {//of kullanmama sebebimiz forof sadece array map dizilerde dolanabiliyor olmamamız
     //     console.log(typeof i);
     // }
     // for of ile kullanmak için önce objeyi arraya atmamız gerekli
-    const array = Object.keys(maaslar);
-    for (const i of array) {
+    let isimler= {ali:a,ayse:b,ahmet:c} = maaslar;
+   
+    let array = Object.entries(isimler);
+    
+    for (let i of array) {
         console.log(i);
     }
