@@ -19,8 +19,8 @@ let maaslar = {
   console.log(enbuyukKisi);//2.Yöntemde bu satır yok.
   
   /*2.Yöntem Bu yöntem de yukarıda belirtilen satırlar çıkıyor.
-  Enbüyük value'yi bulduktan sonra bu valueye sahip key'i bulduk*/
+  Enbüyük value'yi bulduktan sonra bu valueye sahip key'i bulduk
   const enbuyukMaasKisisi=Object.keys(maaslar).find(key => maaslar[key] === enbuyuk);
   console.log(enbuyukMaasKisisi);
-  
+  */
   
