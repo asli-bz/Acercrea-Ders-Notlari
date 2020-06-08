@@ -1,28 +1,26 @@
+/*1.Yöntemde value ile beraber key'i de aldık*/
 let maaslar = {
-    ali:100,
-    ayse:300,
-    ahmet:250
-};
-    if(maaslar.ahmet > maaslar.ali && maaslar.ahmet > maaslar.ayse){
-        console.log("Maaş ahmet");
-    }
-    else if(maaslar.ali>maaslar.ahmet && maaslar.ali>maaslar.ayse){
-        console.log("Maaş ali");
-    }
-    else{
-        console.log("Maaş ayşe");
-    }
-    //  const {ali:a,ayse:b,ahmet:c} = maaslar;
-    //  console.log(a,b,c);
-    //for in kullanırsak
-    // for (let i in maaslar) {//of kullanmama sebebimiz forof sadece array map dizilerde dolanabiliyor olmamamız
-    //     console.log(typeof i);
-    // }
-    // for of ile kullanmak için önce objeyi arraya atmamız gerekli
-    let isimler= {ali:a,ayse:b,ahmet:c} = maaslar;
+    "Ali": 100,
+     "Ayşe":300,
+     "Ahmet": 250
+   };
+   let enbuyuk=0;
+   let enbuyukKisi="";//2.Yöntemde bu satır yok.
+  let dizi=Object.entries(maaslar);//destructingi for of içinde kullanabilmek için entries ile objenin key ve value'sini dizi değişkeni içine aktardık.
+  console.log(dizi);
+  for(let [key,value] of dizi)//destructing yöntemini de kullandık.
+  {
+   if(value>enbuyuk){
+      enbuyuk=value;
+      enbuyukKisi=key;//2.Yöntemde bu satır yok.
+     }
    
-    let array = Object.entries(isimler);
-    
-    for (let i of array) {
-        console.log(i);//destracteri for of yada for in içersinde kullanının
-    }
+  }
+  console.log(enbuyukKisi);//2.Yöntemde bu satır yok.
+  
+  /*2.Yöntem Bu yöntem de yukarıda belirtilen satırlar çıkıyor.
+  Enbüyük value'yi bulduktan sonra bu valueye sahip key'i bulduk*/
+  const enbuyukMaasKisisi=Object.keys(maaslar).find(key => maaslar[key] === enbuyuk);
+  console.log(enbuyukMaasKisisi);
+  
+  
