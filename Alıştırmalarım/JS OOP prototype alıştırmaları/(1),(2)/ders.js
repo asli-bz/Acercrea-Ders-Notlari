@@ -1,27 +1,30 @@
 //1)
-function Araba(fiyat,tarih){
-    this.fiyat=fiyat;
-    this.tarih = tarih;
-
-    this.rengi = "kırmızı",
-    this.modeli = "BMW",
-    this.hızı = 1200;
+function Araba(renk,model,hiz){
+    this.renk=renk;
+    this.model = model;
+    this.hiz= hiz;
 }
+
 Araba.prototype.hızlan = function(){
-console.log("Hız arttırıldı :", this.hızı += 100);
+console.log("Hız arttırıldı :", this.hiz += 100);
 }
 Araba.prototype.yavasla = function(){
-console.log("Hız azaltıldı :", this.hızı-= 200);
+console.log("Hız azaltıldı :", this.hiz-= 200);
 }
-const add = new Araba(1020,"20 haziran");
-console.log(add);
 
-add.hızlan();
-add.yavasla();
+const nesne = new Araba("mavi","mercedes",1213);
+console.log(nesne);
+nesne.hızlan();
+nesne.yavasla();
+
+const nesne2 = new Araba("kırmızı","BMW",2349);
+console.log(nesne2);
+nesne2.hızlan();
+nesne2.yavasla();
 
 //2)
  const kamyon= Object.create(Araba);
-kamyon.rengi="mavi";
-kamyon.modeli="mercedes";
+kamyon.renk="mavi";
+kamyon.model="mercedes";
 
 console.log(kamyon);
