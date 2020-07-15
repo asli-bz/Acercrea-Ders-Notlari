@@ -11,7 +11,8 @@ const xhr = new XMLHttpRequest();//obje oluşturduk
 
 
 xhr.onreadystatechange = function(){
-    console.log(this.readyState);//readystate yazdırmaya çalışınca
+    console.log(this.status);//statusleri yazdırmya çalışınca
+    //console.log(this.readyState);//readystate yazdırmaya çalışınca
 }
 
 xhr.open("GET","example.txt",true);
